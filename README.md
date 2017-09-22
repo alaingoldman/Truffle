@@ -1,5 +1,3 @@
-### Truffle class 9/25
-
 ## Setting up Mist
 
 
