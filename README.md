@@ -41,6 +41,7 @@ $ yarn dev:electron
 ```
 ![Alt text](https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/21686188_1989133898010328_7137568609932587406_n.jpg?oh=42af6e65337729d4b88469533c99eec4&oe=5A55EC48)
 
-Launch the application in test network, this should take some time to download all the past blocks.
+* Launch the application in test network
+* Wait for past blocks to download
+* Write down your ethereum address (we need this later)
 
-Create and save a password and copy your ethereum address. 
