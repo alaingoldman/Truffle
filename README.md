@@ -1,6 +1,6 @@
-# Truffle tutorial
+### Truffle class 9/25
 
-### Setting up Mist
+## Setting up Mist
 
 
 ## Dependencies
@@ -47,6 +47,26 @@ $ yarn dev:electron
 
 ### Were done with mist!
 
-If you want to read more about mist [you can do so here:](https://github.com/ethereum/mist "Ethereum's github") . For now close both terminals. The one running meteor and the one running mist/electron.
+If you want to read more about mist [you can do so here.](https://github.com/ethereum/mist "Ethereum's github") For now close both terminals. The one running meteor and the one running mist/electron.
+* make sure to close both terminals
 
+### truffle setup
 
+Let install truffle and get testrpc
+
+* `$ npm install -g truffle`
+* `$ npm install -g ethereumjs-testrpc`
+
+Now we can go ahead and start a truffle app
+
+* `$ cd ~/Desktop`
+* `$ mkdir truftest`
+* `$ cd truftest`
+* `$ truffle unbox react`
+
+So we can start the servers
+
+* `$ testrpc`
+in another terminal go into your truffle folder
+* `$ cd ~/Desktop/truftest`
+* `$ npm start`
