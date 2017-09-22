@@ -1,7 +1,7 @@
 ## Setting up Mist
 
 
-## Dependencies
+### Dependencies
 
 * `Node.js` v7.x (use the prefered installation method for your OS)
 * `Meteor` javascript app framework
