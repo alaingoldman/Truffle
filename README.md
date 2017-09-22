@@ -48,9 +48,9 @@ $ yarn dev:electron
 If you want to read more about mist [you can do so here.](https://github.com/ethereum/mist "Ethereum's github") For now close both terminals. The one running meteor and the one running mist/electron.
 * make sure to close both terminals
 
-# truffle setup
+# Truffle setup
 
-Let install truffle and get testrpc
+Lets install truffle and get testrpc
 
 * `$ npm install -g truffle`
 * `$ npm install -g ethereumjs-testrpc`
@@ -67,5 +67,15 @@ So we can start the servers
 * `$ testrpc`
 in another terminal go into your truffle folder
 * `$ cd ~/Desktop/truftest`
+* `$ truffle compile`
 * `$ truffle migrate`
 * `$ npm start`
+
+Now we can play with the solidity and react on the site.
+
+# Connecting to Rinkeby 
+
+Make sure to close the terminal 
+
+First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
+`geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal`
