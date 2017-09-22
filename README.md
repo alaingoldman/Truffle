@@ -42,11 +42,13 @@ $ yarn dev:electron
 * Launch the application in test network
 * Wait for past blocks to download
 * Write down your ethereum address (we need this later)
+* `0x6a6401AEb4a3beb93820904E761b0d86364bb39E` 
+* This is my test ethereum wallet, every time you see this wallet in my code you should replace this with your wallet
 
 ### Were done with mist!
 
 If you want to read more about mist [you can do so here.](https://github.com/ethereum/mist "Ethereum's github") For now close both terminals. The one running meteor and the one running mist/electron.
-* make sure to close both terminals
+* Make sure to close both terminals
 
 # Truffle setup
 
@@ -79,5 +81,6 @@ Make sure to close the terminal
 
 First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
 ```
-geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal
+geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="0x6a6401AEb4a3beb93820904E761b0d86364bb39E"  --rpccorsdomain http://localhost:3000 , http://localhost:8545, http://localhost:8546
 ```
+Please dont forget to replace my wallet with the wallet you got from mist/electron.
