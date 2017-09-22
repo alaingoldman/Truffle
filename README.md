@@ -45,3 +45,8 @@ $ yarn dev:electron
 * Wait for past blocks to download
 * Write down your ethereum address (we need this later)
 
+### Were done with mist!
+
+If you want to read more about mist [you can do so here:](https://github.com/ethereum/mist "Ethereum's github") . For now close both terminals. The one running meteor and the one running mist/electron.
+
+
