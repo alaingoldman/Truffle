@@ -67,4 +67,5 @@ So we can start the servers
 * `$ testrpc`
 in another terminal go into your truffle folder
 * `$ cd ~/Desktop/truftest`
+* `$ truffle migrate`
 * `$ npm start`
