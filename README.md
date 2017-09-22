@@ -78,4 +78,6 @@ Now we can play with the solidity and react on the site.
 Make sure to close the terminal 
 
 First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
-`geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal`
+```
+geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal
+```
