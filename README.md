@@ -112,3 +112,7 @@ module.exports = {
   },
 };
 ```
+Now we just have to migrate the contract onto rinkeby.
+```
+truffle migrate --network rinkeby
+```
