@@ -68,6 +68,9 @@ So we can start the servers
 
 * `$ testrpc`
 
+
+![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21617956_1989181674672217_2485686153056585116_n.jpg?oh=7879be943e0516d39f5a5269cda09358&oe=5A3A8DB9)
+
 in another terminal go into your truffle folder
 * `$ cd ~/Desktop/truftest`
 * `$ truffle compile`
