@@ -98,7 +98,7 @@ contract SimpleStorage {
 
 ```
 
-Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. 
+Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. `App.js`
 ```
 import React, { Component } from 'react'
 import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
@@ -177,7 +177,7 @@ class App extends Component {
 export default App
 
 ```
-I added some css to #get and #set so I can see those div's as buttons.
+I added some css to #get and #set so I can see those div's as buttons. You can find this in `App.css`
 
 ```
 #set{
