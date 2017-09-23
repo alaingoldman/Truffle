@@ -82,13 +82,13 @@ Now we can play with the solidity and react on the site.
 # Free Rinkeby ether
 In order to use the test network we have to have test ether which we cant just print out. 
 
-* log into `github`, create an account if you dont have one
-* head to [https://gist.github.com/](https://gist.github.com/)
-* create a new public gist and only write put your ethereum address in there
+* Log into `github`, create an account if you dont have one
+* Head to [https://gist.github.com/](https://gist.github.com/)
+* Create a new public gist and only write put your ethereum address in there
 * [Check out my example](https://gist.github.com/alaingoldman/6fe77a7a71b6c706ab31f2512247d870)
 * [Get free Ether from https://faucet.rinkeby.io/](https://faucet.rinkeby.io/)
+* Paste the url from the gist file into the faucet page
 
-![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21766373_1989277414662643_2153912330315339539_n.jpg?oh=5e927f23ff4b49fb4aa4a9dbfb83534d&oe=5A42FC61)
 
 
 # Connecting to Rinkeby 
