@@ -133,7 +133,7 @@ $ truffle migrate --network rinkeby
 ```
 If you want to view the current state of your contracts on rinkeby test network go to this url. 
 
-Replace my wallet with yours. [My address's transactions.](https://rinkeby.etherscan.io/address/0x6a6401aeb4a3beb93820904e761b0d86364bb39e)
+(Replace my wallet with yours. [My address's transactions.](https://rinkeby.etherscan.io/address/0x6a6401aeb4a3beb93820904e761b0d86364bb39e) )
 ```
 https://rinkeby.etherscan.io/address/YOUR-WALLET-HERE
 ```
