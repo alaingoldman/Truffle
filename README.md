@@ -97,7 +97,7 @@ Make sure to close the terminal
 
 First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
 ```
-geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="0x6a6401AEb4a3beb93820904E761b0d86364bb39E" --rpccorsdomain http://localhost:3000
+$ geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="0x6a6401AEb4a3beb93820904E761b0d86364bb39E" --rpccorsdomain http://localhost:3000
 ```
 Please dont forget to replace my wallet with the wallet you got from mist/electron.
 
@@ -129,5 +129,9 @@ module.exports = {
 ```
 Now we just have to migrate the contract onto rinkeby.
 ```
-truffle migrate --network rinkeby
+$ truffle migrate --network rinkeby
+```
+Now we can turn on the server and we're done
+```
+$ npm start 
 ```
