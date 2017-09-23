@@ -79,6 +79,106 @@ in another terminal go into your truffle folder
 
 Now we can play with the solidity and react on the site.
 
+### Solidity
+lets mess around with the solidity contract and set it to use strings.
+```
+pragma solidity ^0.4.2;
+
+contract SimpleStorage {
+  string testVal = "testval default value";
+
+  function set(string x) {
+    testVal = x;
+  }
+
+  function get() constant returns (string) {
+    return testVal;
+  }
+}
+
+```
+
+Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. 
+```
+import React, { Component } from 'react'
+import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
+import getWeb3 from './utils/getWeb3'
+
+import './css/oswald.css'
+import './css/open-sans.css'
+import './css/pure-min.css'
+import './App.css'
+
+const contract = require('truffle-contract')
+const simpleStorage = contract(SimpleStorageContract)
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      storageValue: 0,
+      web3: null
+    }
+  }
+
+  componentWillMount() {
+    getWeb3
+    .then(results => {
+      this.setState({
+        web3: results.web3
+      })
+    })
+    .catch(() => {
+      console.log('Error finding web3.')
+    })
+  }
+
+  getValue(){
+    simpleStorage.setProvider(this.state.web3.currentProvider)
+    var simpleStorageInstance
+    console.log("...getting data");
+    this.state.web3.eth.getAccounts((error, accounts) => {
+      simpleStorage.deployed().then((instance) => {
+        simpleStorageInstance = instance
+        return simpleStorageInstance.get.call({from: accounts[0]})
+      }).then((result) => {
+        console.log("result", result);
+      })
+    })
+
+  }
+
+  setValue(){
+    simpleStorage.setProvider(this.state.web3.currentProvider)
+    var simpleStorageInstance
+    console.log("...setting data");
+    this.state.web3.eth.getAccounts((error, accounts) => {
+      simpleStorage.deployed().then((instance) => {
+        simpleStorageInstance = instance
+        return simpleStorageInstance.set("new string dude", {from: accounts[0], gas: 100000})
+      }).then((result) => {
+        console.log("result", result);
+      })
+    })
+  }
+
+
+  render() {
+    return (
+      <div>
+        <div id="get" onClick={this.getValue.bind(this)}></div>
+        <div id="set" onClick={this.setValue.bind(this)}></div>
+      </div>
+    );
+  }
+}
+
+export default App
+
+```
+
+
 # Free Rinkeby ether
 In order to use the test network we have to have test ether which we cant just print out. 
 
