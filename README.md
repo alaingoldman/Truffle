@@ -127,7 +127,7 @@ module.exports = {
   },
 };
 ```
-Now we just have to migrate the contract onto rinkeby.
+Now we just have to migrate the contract onto rinkeby. This is going to ask for the password you gave mist/electron.
 ```
 $ truffle migrate --network rinkeby
 ```
