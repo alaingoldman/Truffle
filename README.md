@@ -67,6 +67,7 @@ Now we can go ahead and start a truffle app
 So we can start the servers
 
 * `$ testrpc`
+
 in another terminal go into your truffle folder
 * `$ cd ~/Desktop/truftest`
 * `$ truffle compile`
@@ -81,6 +82,33 @@ Make sure to close the terminal
 
 First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
 ```
-geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="0x6a6401AEb4a3beb93820904E761b0d86364bb39E"  --rpccorsdomain http://localhost:3000 , http://localhost:8545, http://localhost:8546
+geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="0x6a6401AEb4a3beb93820904E761b0d86364bb39E" --rpccorsdomain http://localhost:3000
 ```
 Please dont forget to replace my wallet with the wallet you got from mist/electron.
+
+This will ask you for the password you gave mist/electron.
+
+Next, we need to add Rinkeby to our truffle config file. If we open `truffle.js` in our contract code we’ll see something like:
+
+```
+module.exports = {
+  rpc: {
+    host: 'localhost',
+    port: '8545'
+ },
+  networks: {
+    development: {
+      host: "localhost",
+      port: 8545,
+      network_id: "*" // Match any network id
+    },
+    rinkeby: {
+      host: "localhost", // Connect to geth on the specified
+      port: 8545,
+      from: "0x6a6401AEb4a3beb93820904E761b0d86364bb39E", // default address to use for any transaction Truffle makes during migrations
+      network_id: 4,
+      gas: 4612388 // Gas limit used for deploys
+    }
+  },
+};
+```
