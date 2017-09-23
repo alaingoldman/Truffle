@@ -177,7 +177,26 @@ class App extends Component {
 export default App
 
 ```
+I added some css to #get and #set so I can see those div's as buttons.
 
+```
+#set{
+  height:50px;
+  width:50px;
+  background-color:red;
+  float:left;
+  margin: 20px;
+  cursor: pointer;
+}
+#get{
+  height:50px;
+  width:50px;
+  background-color:blue;
+  float:left;
+  margin: 20px;
+  cursor: pointer;
+}
+```
 
 # Free Rinkeby ether
 In order to use the test network we have to have test ether which we cant just print out. 
