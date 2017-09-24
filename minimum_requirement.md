@@ -45,6 +45,7 @@ $ yarn dev:electron
 
 ![Rinkeby download](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21766333_1990102794580105_1591728995222655320_n.jpg?oh=00e1a442ba4ccbae870cc2b54e7fad3b&oe=5A4FB9EC)
 
+* (on the bottom left Mist is downloading the past blocks, wait for this to update.)
 * Write down your ethereum address (we need this in class)
 * `0x6a6401AEb4a3beb93820904E761b0d86364bb39E` 
 
