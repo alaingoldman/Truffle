@@ -1,6 +1,6 @@
 ## 9/25 truffle class prep
 
-In oder to be on the same page you guys / gals would be the most prepared if you installed mist/electron. This takes about 30 minutes. This guide is aimed towards apple and linux. If you are on windows you can check mist/electron's [official documentation here.](https://github.com/ethereum/mist) 
+In oder to be prepared you guys/gals should install mist/electron before class. This takes about 30 minutes. This guide is aimed towards apple and linux. If you are on windows you can check mist/electron's [official documentation here.](https://github.com/ethereum/mist) 
 
 ## Setting up Mist
 
@@ -44,9 +44,8 @@ $ yarn dev:electron
 
 * Launch the application in test network
 * Wait for past blocks to download
-* Write down your ethereum address (we need this later)
+* Write down your ethereum address (we need this in class)
 * `0x6a6401AEb4a3beb93820904E761b0d86364bb39E` 
-* This is my test ethereum wallet, every time you see this wallet in my code you should replace this with your wallet
 
 ### Were done with mist!
 
