@@ -22,8 +22,7 @@ Now you're ready to initialize Mist for development:
 
 ```
 $ cd ~/Desktop
-$ mkdir mist_test
-# cd mist_test
+$ mkdir mist_test && cd mist_test
 $ git clone https://github.com/ethereum/mist.git
 $ cd mist
 $ yarn
