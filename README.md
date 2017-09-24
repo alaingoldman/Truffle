@@ -12,6 +12,11 @@
 ```
 $ curl https://install.meteor.com/ | sh
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
+```
+
+* Make sure you have `yarn` installed. you can get it [here](https://yarnpkg.com/lang/en/docs/install/)
+
+```
 $ yarn global add electron@1.4.15
 $ yarn global add gulp
 ```
