@@ -25,14 +25,7 @@ $ yarn global add gulp
 
 Now you're ready to initialize Mist for development:
 
-```
-$ cd ~/Desktop
-$ mkdir mist_test && cd mist_test
-$ git clone https://github.com/ethereum/mist.git
-$ cd mist
-$ yarn
-$ cd interface && meteor --no-release-check
-```
+
 While meteor is running open another terminal window and go back to the folder you created `/Desktop/mist_test/mist`
 
 Now lets run electron for the first time:
@@ -45,9 +38,12 @@ $ yarn dev:electron
 
 * Launch the application in test network
 * Wait for past blocks to download
-* Write down your ethereum address (we need this later)
+
+![Rinkeby download](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21766333_1990102794580105_1591728995222655320_n.jpg?oh=00e1a442ba4ccbae870cc2b54e7fad3b&oe=5A4FB9EC)
+
+* (on the bottom left Mist is downloading the past blocks, wait for this to update.)
+* Write down your ethereum address (we need this in class)
 * `0x6a6401AEb4a3beb93820904E761b0d86364bb39E` 
-* This is my test ethereum wallet, every time you see this wallet in my code you should replace this with your wallet
 
 ### Were done with mist!
 
