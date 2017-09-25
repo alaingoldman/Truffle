@@ -23,6 +23,15 @@ $ yarn global add gulp
 
 ### Mist setup
 
+```
+ $ cd ~/Desktop
+ $ mkdir mist_test && cd mist_test
+ $ git clone https://github.com/ethereum/mist.git
+ $ cd mist
+ $ yarn
+ $ cd interface && meteor --no-release-check
+```
+ 
 Now you're ready to initialize Mist for development:
 
 
