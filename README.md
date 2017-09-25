@@ -110,8 +110,11 @@ contract MySale {
   function allCoins() constant public returns(uint){
   	return total_coins;
   }
+  
+  function myCoin() constant public returns(uint){
+   return balance[msg.sender];
+  }
 }
-
 ```
 
 Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. `App.js`
