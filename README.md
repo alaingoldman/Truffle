@@ -117,7 +117,7 @@ contract MySale {
 Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. `App.js`
 ```
 import React, { Component } from 'react'
-import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
+import MySale from '../build/contracts/MySale.json'
 import getWeb3 from './utils/getWeb3'
 
 import './css/oswald.css'
@@ -126,7 +126,7 @@ import './css/pure-min.css'
 import './App.css'
 
 const contract = require('truffle-contract')
-const simpleStorage = contract(SimpleStorageContract)
+const mySale = contract(MySale)
 
 class App extends Component {
   constructor(props) {
@@ -150,14 +150,15 @@ class App extends Component {
     })
   }
 
-  getValue(){
-    simpleStorage.setProvider(this.state.web3.currentProvider)
-    var simpleStorageInstance
+  coinCount(){
+    mySale.setProvider(this.state.web3.currentProvider)
+    var mySaleInstance
+
     console.log("...getting data");
     this.state.web3.eth.getAccounts((error, accounts) => {
-      simpleStorage.deployed().then((instance) => {
-        simpleStorageInstance = instance
-        return simpleStorageInstance.get.call({from: accounts[0]})
+      mySale.deployed().then((instance) => {
+        mySaleInstance = instance
+        return mySaleInstance.allCoins.call({from: accounts[0]})
       }).then((result) => {
         console.log("result", result);
       })
@@ -165,14 +166,14 @@ class App extends Component {
 
   }
 
-  setValue(){
-    simpleStorage.setProvider(this.state.web3.currentProvider)
-    var simpleStorageInstance
+  printCoin(){
+    mySale.setProvider(this.state.web3.currentProvider)
+    var mySaleInstance
     console.log("...setting data");
     this.state.web3.eth.getAccounts((error, accounts) => {
-      simpleStorage.deployed().then((instance) => {
-        simpleStorageInstance = instance
-        return simpleStorageInstance.set("new string dude", {from: accounts[0], gas: 100000})
+      mySale.deployed().then((instance) => {
+        mySaleInstance = instance
+        return mySaleInstance.printCoin(4, {from: accounts[0]})
       }).then((result) => {
         console.log("result", result);
       })
@@ -183,15 +184,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div id="get" onClick={this.getValue.bind(this)}></div>
-        <div id="set" onClick={this.setValue.bind(this)}></div>
+        <div id="get" onClick={this.coinCount.bind(this)}></div>
+        <div id="set" onClick={this.printCoin.bind(this)}></div>
       </div>
     );
   }
 }
 
 export default App
-
 ```
 I added some css to #get and #set so I can see those div's as buttons. You can find this in `App.css`
 
