@@ -7,11 +7,11 @@ In oder to be prepared you guys/gals should install mist/electron before class. 
 
 ### Dependencies
 
-* `Node.js` v7.x (use the prefered installation method for your OS)
-* `Meteor` javascript app framework
-* `Yarn` package manager
-* `Electron` v1.4.15 cross platform desktop app framework
-* `Gulp` build and automation system
+* [Node.js x7.x](https://nodejs.org/en/) (use the prefered installation method for your OS)
+* [Meteor](https://www.meteor.com/install) javascript app framework
+* [Yarn](https://yarnpkg.com/en/) package manager
+* [Electron](https://electron.atom.io/) v1.4.15 cross platform desktop app framework
+* [Gulp](https://gulpjs.com/) build and automation system
 
 ```
 $ curl https://install.meteor.com/ | sh
