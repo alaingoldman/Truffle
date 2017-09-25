@@ -89,19 +89,26 @@ in another terminal go into your truffle folder
 Now we can play with the solidity and react on the site.
 
 ### Solidity
-lets mess around with the solidity contract and set it to use strings.
+lets mess around with the solidity contract.
+
 ```
-pragma solidity ^0.4.2;
+$ truffle create contract MySale
+```
 
-contract SimpleStorage {
-  string testVal = "testval default value";
+```
+pragma solidity ^0.4.4;
 
-  function set(string x) {
-    testVal = x;
+contract MySale {
+  mapping(address => uint) balance;
+  uint total_coins = 1;
+
+  function printCoin(uint howMuch) public{
+  	balance[msg.sender] += howMuch;
+  	total_coins += howMuch;
   }
 
-  function get() constant returns (string) {
-    return testVal;
+  function allCoins() constant public returns(uint){
+  	return total_coins;
   }
 }
 
