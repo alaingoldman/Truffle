@@ -187,7 +187,7 @@ I added some css to #get and #set so I can see those div's. You can find this in
 }
 ```
 
-What we get is two boxes that when clicked execute our contract and console.log the result. But what if we didn't want to run the app inside of testrpc and deploy it For that we will need mist and rinkeby. Rinkeby is the test evm. [rinkeby.io](https://www.rinkeby.io) . Lets go a head and get setup for that next.
+What we get is two boxes that when clicked execute our contract and console.log the result. But what if we didn't want to run the app inside of testrpc? For that we will need mist and rinkeby. Rinkeby is the test evm. [rinkeby.io](https://www.rinkeby.io). Lets go a head and get setup for that next.
 
 * close testrpc terminal and close the truffle server
 
