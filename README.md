@@ -1,5 +1,5 @@
 # Jumping into Truffle and rinkeby
-This tutorial was made with truffle v3.4.9 (core: 3.4.8) and solidity v0.4.15
+This tutorial was made with truffle v3.4.9 (core: 3.4.8) and solidity v0.4.15.
 
 
 ## Truffle setup
@@ -20,7 +20,7 @@ Testrpc is a Node.js based Ethereum client for testing and development. It uses 
 
 ![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21617956_1989181674672217_2485686153056585116_n.jpg?oh=7879be943e0516d39f5a5269cda09358&oe=5A3A8DB9)
 
-Now we can go ahead and install truffle and create the core of our app
+Now we can go ahead and install truffle and create the core of our app.
 
 * `$ npm install -g truffle`
 * `$ cd ~/Desktop`
@@ -31,16 +31,13 @@ Now we can go ahead and install truffle and create the core of our app
 Here we are using a shortcut `truffle unbox react` which does an initialization and adds the necessary modules for react. If you want to have a pure instalation you should instead run `truffle init` inside of the folder you created.
 
 
-
-
-
-in another terminal go into your truffle folder
+in another terminal go into your truffle folder.
 * `$ cd ~/Desktop/truftest`
 * `$ truffle compile`
 * `$ truffle migrate`
 * `$ npm start`
 
-Now we can play with the solidity and react on the site.
+Compile and migrate and deploying the default solidity contracts.
 
 ### Solidity
 lets mess around with the solidity contract. We are going to be making a contract called MySale. `truftest/contracts/MySale.sol`
@@ -255,7 +252,7 @@ In order to use the test network we have to have test ether which we cant just p
 
 # Connecting to Rinkeby 
 
-Make sure to close the terminal 
+Make sure to close the terminal.
 
 First, start geth with Rinkeby and make sure that the correct APIs for Truffle are enabled.
 ```
@@ -300,7 +297,7 @@ If you want to view the current state of your contracts on rinkeby test network 
 https://rinkeby.etherscan.io/address/YOUR-WALLET-HERE
 ```
 
-Now we can turn on the server and we're done
+Now we can turn on the server and we're done.
 ```
 $ npm start 
 ```
