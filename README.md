@@ -84,7 +84,10 @@ contract MySale {
 }
 ```
 
-Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. `App.js`
+Now lets go ahead and make our app have a touch event to trigger both a get and a set function from that contract. 
+
+Go to `truftest/src/App.js` and add this. 
+
 ```
 import React, { Component } from 'react'
 import MySale from '../build/contracts/MySale.json'
@@ -163,7 +166,7 @@ class App extends Component {
 
 export default App
 ```
-I added some css to #get and #set so I can see those div's as buttons. You can find this in `App.css`
+I added some css to #get and #set so I can see those div's. You can find this in `truftest/src/App.css` 
 
 ```
 #set{
@@ -183,6 +186,11 @@ I added some css to #get and #set so I can see those div's as buttons. You can f
   cursor: pointer;
 }
 ```
+
+What we get is two boxes that when clicked execute our contract and console.log the result. But what if we didn't want to run the app inside of testrpc and deploy it For that we will need mist and rinkeby. Rinkeby is the test evm. [rinkeby.io](https://www.rinkeby.io) . Lets go a head and get setup for that next.
+
+* close testrpc terminal and close the truffle server
+
 ### Dependencies
 
 * [Node.js x7.x](https://nodejs.org/en/) (use the prefered installation method for your OS)
@@ -204,6 +212,8 @@ $ yarn global add gulp
 ```
 
 ### Mist setup
+
+* quick reminder make sure you closed the testrpc terminal and the truffle server
 
 ```
  $ cd ~/Desktop
