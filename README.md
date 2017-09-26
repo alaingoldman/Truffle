@@ -13,6 +13,7 @@ If you're a Windows user, we recommend installing and using Truffle via Windows 
 Lets install truffle
 
 * `$ npm install -g truffle`
+
 Next we have to install testrpc. 
 
 Testrpc is a Node.js based Ethereum client for testing and development. It uses ethereumjs to simulate full client behavior and make developing Ethereum applications much faster. It also includes all popular RPC functions and features (like events) and can be run deterministically to make development a breeze. [https://github.com/ethereumjs/testrpc](https://github.com/ethereumjs/testrpc)
