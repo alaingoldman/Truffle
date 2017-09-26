@@ -299,6 +299,8 @@ module.exports = {
   },
 };
 ```
+Please dont forget to replace the from section in this file to your ethereum address you scored from mist/electron. 
+
 Now we just have to migrate the contract onto rinkeby. This is going to ask for the password you gave mist/electron.
 ```
 $ truffle migrate --network rinkeby
@@ -310,7 +312,4 @@ If you want to view the current state of your contracts on rinkeby test network 
 https://rinkeby.etherscan.io/address/YOUR-WALLET-HERE
 ```
 
-Now we can turn on the server and we're done.
-```
-$ npm start 
-```
+# Congratulations we set it up!!
