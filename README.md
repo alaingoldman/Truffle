@@ -10,9 +10,13 @@ If you're a Windows user, we recommend installing and using Truffle via Windows 
 
 ### Non-windows
 
-Lets install truffle and get testrpc
+Lets install truffle
 
 * `$ npm install -g truffle`
+Next we have to install testrpc. 
+
+Testrpc is a Node.js based Ethereum client for testing and development. It uses ethereumjs to simulate full client behavior and make developing Ethereum applications much faster. It also includes all popular RPC functions and features (like events) and can be run deterministically to make development a breeze. [https://github.com/ethereumjs/testrpc](https://github.com/ethereumjs/testrpc)
+
 * `$ npm install -g ethereumjs-testrpc`
 
 Now we can go ahead and start a truffle app
@@ -22,7 +26,8 @@ Now we can go ahead and start a truffle app
 * `$ cd truftest`
 * `$ truffle unbox react`
 
-So we can start the servers
+
+So we can start the ethereum virtual machine(evm) in memory.
 
 * `$ testrpc`
 
@@ -47,6 +52,7 @@ Now we have to add a migration file for deploying this contract to the evm. Crea
 
 Note that the filename is prefixed with a number and is suffixed by a description. The numbered prefix is required in order to record whether the migration ran successfully. The suffix is purely for human readability and comprehension.
 
+Ok lets fill out the migration.
 ```
 var MySale = artifacts.require("./MySale.sol");
 
