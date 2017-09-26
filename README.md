@@ -4,6 +4,12 @@ This tutorial was made with truffle v3.4.9 (core: 3.4.8) and solidity v0.4.15
 
 ## Truffle setup
 
+### Windows
+
+If you're a Windows user, we recommend installing and using Truffle via Windows PowerShell or [Git BASH](https://git-for-windows.github.io/). These two shells provide features far beyond the standard Command Prompt, and will make your life on the command line much easier.
+
+### Non-windows
+
 Lets install truffle and get testrpc
 
 * `$ npm install -g truffle`
