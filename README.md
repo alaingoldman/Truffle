@@ -27,6 +27,7 @@ Now we can go ahead and start a truffle app
 * `$ cd truftest`
 * `$ truffle unbox react`
 
+Here we are using a shortcut `truffle unbox react` which does an initialization and adds the necessary modules for react. If you want to have a pure instalation you should instead run `truffle init` inside of the folder you created.
 
 So we can start the ethereum virtual machine(evm) in memory.
 
