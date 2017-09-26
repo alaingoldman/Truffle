@@ -16,9 +16,6 @@ lets install testrpc.
 Testrpc is a Node.js based Ethereum client for testing and development. It uses ethereumjs to simulate full client behavior and make developing Ethereum applications much faster. It also includes all popular RPC functions and features (like events) and can be run deterministically to make development a breeze. [https://github.com/ethereumjs/testrpc](https://github.com/ethereumjs/testrpc)
 
 * `$ npm install -g ethereumjs-testrpc`
-
-Lets start `testrpc`.
-
 * `$ testrpc`
 
 ![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21617956_1989181674672217_2485686153056585116_n.jpg?oh=7879be943e0516d39f5a5269cda09358&oe=5A3A8DB9)
