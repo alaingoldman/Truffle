@@ -37,8 +37,11 @@ in another terminal go into your truffle folder.
 * `$ truffle migrate`
 * `$ npm start`
 
-Compile and migrate and deploying the default solidity contracts.
+Compile and migrate and deploying the default solidity contracts to the `testrpc`. Your default app should look like this.
 
+![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22050179_1990831964507188_6161482830654725332_n.jpg?oh=ff72212642aa275c385a49552381858f&oe=5A3B3C1A)
+ 
+ 
 ### Solidity
 lets mess around with the solidity contract. We are going to be making a contract called MySale. `truftest/contracts/MySale.sol`
 
