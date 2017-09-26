@@ -1,9 +1,8 @@
-## Jumping into Truffle and rinkeby
+# Jumping into Truffle and rinkeby
+This tutorial was made with truffle v3.4.9 (core: 3.4.8) and solidity v0.4.15
 
 
-
-
-# Truffle setup
+## Truffle setup
 
 Lets install truffle and get testrpc
 
@@ -33,10 +32,19 @@ in another terminal go into your truffle folder
 Now we can play with the solidity and react on the site.
 
 ### Solidity
-lets mess around with the solidity contract.
+lets mess around with the solidity contract. We are going to be making a contract called MySale. `truftest/contracts/MySale.sol`
 
 ```
 $ truffle create contract MySale
+```
+Now we have to add a migration file for deploying this contract to the evm.
+
+```
+var MySale = artifacts.require("./MySale.sol");
+
+module.exports = function(deployer) {
+  deployer.deploy(MySale);
+};
 ```
 
 ```
