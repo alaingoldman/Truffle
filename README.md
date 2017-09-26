@@ -37,7 +37,9 @@ lets mess around with the solidity contract. We are going to be making a contrac
 ```
 $ truffle create contract MySale
 ```
-Now we have to add a migration file for deploying this contract to the evm.
+Now we have to add a migration file for deploying this contract to the evm. Create a file called `truftest/migrations/3_add_Sale.js`
+
+Note that the filename is prefixed with a number and is suffixed by a description. The numbered prefix is required in order to record whether the migration ran successfully. The suffix is purely for human readability and comprehension.
 
 ```
 var MySale = artifacts.require("./MySale.sol");
@@ -46,7 +48,8 @@ module.exports = function(deployer) {
   deployer.deploy(MySale);
 };
 ```
-
+Now you will be provided with a solidity file with no functions. I went ahead and filled it in with 3 rudimentary functions.
+`truftest/contracts/MySale.sol`
 ```
 pragma solidity ^0.4.4;
 
