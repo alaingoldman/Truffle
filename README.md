@@ -20,7 +20,7 @@ Testrpc is a Node.js based Ethereum client for testing and development. It uses 
 
 ![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21617956_1989181674672217_2485686153056585116_n.jpg?oh=7879be943e0516d39f5a5269cda09358&oe=5A3A8DB9)
 
-Now we can go ahead and install truffle and create the core of our app.
+Now while testrpc is running in a brand new terminal we can go ahead and install truffle, initialize and app and run it.
 
 * `$ npm install -g truffle`
 * `$ cd ~/Desktop`
@@ -31,7 +31,7 @@ Now we can go ahead and install truffle and create the core of our app.
 Here we are using a shortcut `truffle unbox react` which does an initialization and adds the necessary modules for react. If you want to have a pure instalation you should instead run `truffle init` inside of the folder you created.
 
 
-in another terminal go into your truffle folder.
+Go into your truffle folder.
 * `$ cd ~/Desktop/truftest`
 * `$ truffle compile`
 * `$ truffle migrate`
