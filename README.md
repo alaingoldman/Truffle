@@ -1,4 +1,4 @@
-# Jumping into Truffle and rinkeby
+# Jumping into Truffle and Rinkeby
 This tutorial was made with truffle v3.4.9 (core: 3.4.8) and solidity v0.4.15.
 
 
